@@ -1,0 +1,145 @@
+/* ... (existing styles) ... */
+/* body{
+    background-color: #F3CCF3;
+} */
+
+body {
+    font-family: 'Pacifico', cursive; /* Stylish and romantic font */
+    background-color: #f8f4e6; /* Light cream background color */
+    color: #6c5b7b; /* Romantic purple text color */
+    font-size: large;
+    font-weight: bolder;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+}
+
+.image-item {
+    opacity: 0;
+    height: 350px;
+    width: 320px;
+    transform: translateX(0); /* Start from the left */
+    animation: fadeInWithDelay 1s ease-in-out forwards;
+}
+
+@keyframes fadeInWithDelay {
+    0% {
+        opacity: 0;
+        transform: translateX(50px); /* Move slightly to the right */
+    }
+    50% {
+        opacity: 0;
+        transform: translateX(50px); /* Stay at the same position */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Move to the original position */
+    }
+}
+
+/* Adjust the delay for each image */
+.image-item:nth-child(2) {
+    animation-delay: 1s; /* 1s delay for the second image */
+}
+
+.image-item:nth-child(3) {
+    animation-delay: 2s; /* 3s delay for the third image */
+}
+.image-item:nth-child(4) {
+    animation-delay: 3s; /* 1s delay for the second image */
+}
+
+.image-item:nth-child(5) {
+    animation-delay: 4s; /* 3s delay for the third image */
+}
+
+
+/* You can add similar rules for more images if needed */
+.text-animation {
+    text-align: center;
+}
+
+.line {
+    opacity: 0;
+    animation: fadeInWithDelay 1s ease-in-out forwards;
+}
+
+@keyframes fadeInWithDelay {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Move slightly down */
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(20px); /* Stay at the same position */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Move to the original position */
+    }
+}
+
+/* Adjust the delay for each line */
+.line[data-index="1"] {
+    animation-delay: 0.5s; /* 0.5s delay for the first line */
+}
+
+.line[data-index="2"] {
+    animation-delay: 1s; /* 1s delay for the second line */
+}
+
+.line[data-index="3"] {
+    animation-delay: 1.5s; /* 1.5s delay for the third line */
+}
+
+.line[data-index="4"] {
+    animation-delay: 2s; /* 2s delay for the fourth line */
+}
+
+.line[data-index="5"] {
+    animation-delay: 2.5s; /* 2.5s delay for the fifth line */
+}
+
+.line[data-index="6"] {
+    animation-delay: 3s; /* 3s delay for the sixth line */
+}
+
+.line[data-index="7"] {
+    animation-delay: 3.5s; /* 3.5s delay for the seventh line */
+}
+
+.line[data-index="8"] {
+    animation-delay: 4s; /* 4s delay for the eighth line */
+}
+
+.line[data-index="9"] {
+    animation-delay: 4.5s; /* 4.5s delay for the ninth line */
+}
+
+.line[data-index="10"] {
+    animation-delay: 5s; /* 5s delay for the tenth line */
+}
+
+.line[data-index="11"] {
+    animation-delay: 5.5s; /* 5.5s delay for the eleventh line */
+}
+
+.line[data-index="12"] {
+    animation-delay: 6s; /* 6s delay for the twelfth line */
+}
+
+.line[data-index="13"] {
+    animation-delay: 6.5s; /* 6.5s delay for the thirteenth line */
+}
+
+.line[data-index="14"] {
+    animation-delay: 7s; /* 7s delay for the fourteenth line */
+}
+
+.line[data-index="15"] {
+    animation-delay: 7.5s; /* 7.5s delay for the fifteenth line */
+}
